@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SweetMart Food Industries</title>
+    <link rel="shortcut icon" href="Pictures/TitleLogo.png">
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!-- Analytics -->
+  </head>
+  <body data-spy="scroll" data-target="#navbarNav" data-offset="70">
+ 
+	  <!-- Script For Scrolling-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "#menu1" && this.hash !== "#menu2" && this.hash !== "#menu3" && this.hash !== "#menu4" && this.hash !== "#menu5" && this.hash !== "#carousel1") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+	  
+  <!-- Particles -->
+  <div class="particles-part" id="home">
+    <div id="particles-js"></div>
+    <div class="logo">
+      <a href="#aoutus"><img src="Pictures/sweetlogo.png" class="logoimage img-fluid" alt="Placeholder image"></a><br>
+		<a href="#aoutus"><img src="Pictures/download.png" class="arrow2 img-fluid" alt="Placeholder image"></a>
+    </div>
+  </div>
+	
+  <!-- navbar part -->
+  <div class="navigation-part sticky-top">
+	<div class="topnav"><div class="topnav-centered">
+    <nav class="navbar navbar-expand-sm navbar-dark" id="navScroll">
+        <div class="container">
+            <a class="d-block d-sm-none navbar-brand" href="javascript:void(0)"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link homeLink" href="#home"><font size="+2">Home</font></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link aboutLink" href="#aoutus"><font size="+2">About Us</font></a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link projectLink" href="#facts"><font size="+2">Miscellaneous</font></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link projectLink" href="#director"><font size="+2">Director's Note</font></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contactLink" href="#contact"><font size="+2">Contact Us</font></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav></div></div>
+</div>
+	
+  <!-- aout us part -->
+    <div class="container-fluid" id="aoutus">
+	  <div class="container-fluid" id="headingaus">
+			<center>About Us</center>
+		</div>
+		<div class="container-fluid" id="stuffaus">
+		  <div class="row">
+			  <div class="col-lg-4">
+				  <center><h1 class="smallheadig">Introduction</h1>
+				  <p class="stuffofsmalheadig">We are one of Nepal’s largest manufacturers and distributors of confectionery and gum. We create imaginative products that are enjoyed by the consumers.</p></center>
+			  </div>
+			  <div class="col-lg-4 a2">
+				  <center><h1 class="smallheadig"><font color="#FC243C">Vision</font></h1>
+				  <p class="stuffofsmalheadig"><font color="#FC243C">We will enhance our world leadership in confectionery by creating value for consumers through innovative and gratifying high-quality products.</font></p></center>
+			  </div>
+			  <div class="col-lg-4">
+				  <center><h1 class="smallheadig">Our Mission</h1>
+				  <p class="stuffofsmalheadig">To provide our customers with guaranteed best quality confectionary products maintaining excellent services, easy availability, regularity in supply and quality consistency.</p></center>
+			  </div>
+		  </div>
+        </div>
+		<div class="container-fluid" id="headingwhy">
+			<center>Why are we the best?</center>
+		</div>
+		<div class="TabbedContents container-fluid">
+  			<div class="PicturesOfTabbedContents container-fluid">
+  				<ul class="nav nav-pills">
+  					<li class="active"><br><center><a data-toggle="pill" href="#menu1"><img src="Pictures/medal.png" class="RoundImage img-responsive" alt="Placeholder image"></a></center></li>
+  	  				<li><br><center><a data-toggle="pill" href="#menu2"><img src="Pictures/innovation.png" class="RoundImage img-responsive" alt="Placeholder image"></a></center></li>
+  	  				<li><br><center><a data-toggle="pill" href="#menu3"><img src="Pictures/future.png" class="RoundImage img-responsive" alt="Placeholder image"></a></center></li>
+  	  				<li><br><center><a data-toggle="pill" href="#menu4"><img src="Pictures/ecology.png" class="RoundImage img-responsive" alt="Placeholder image"></a></center></li>
+  	  				<li><br><center><a data-toggle="pill" href="#menu5"><img src="Pictures/group.png" class="RoundImage img-responsive" alt="Placeholder image"></a></center></li>
+  				</ul>
+  			</div>
+<div class="tab-content TabbedText">
+  <div id="menu1" class="active tab-pane fade"><font color="#FC243C">
+    <h1 align="center" class="smallheadig">Quality</h1><p align="center" class="stuffofsmalheadig">Consumers around the world want to be sure that the products they buy are of unparalleled quality. We pay the utmost attention to selecting the finest raw materials, developing cutting-edge production processes and investing in research into newer and better production formulae.</p></font>
+  </div>
+  <div id="menu2" class="tab-pane fade"><font color="#FC243C">
+    <h1 align="center" class="smallheadig">Innovation</h1><p align="center" class="stuffofsmalheadig">Our consumers in both mature and growing economies are very sensitive to new experiences and concepts. We want to be the ones who pleasantly surprise them with new products, new flavours, new packaging and new product concepts that will help them enjoy “sweeter” moments in their lives. This is why we give paramount strategic importance to researching and developing new products.</p></font>
+  </div>
+  <div id="menu3" class="tab-pane fade"><font color="#FC243C">
+    <h1 align="center" class="smallheadig">Marketing</h1><p align="center" class="stuffofsmalheadig">We place great importance on understanding the market and its trends in order to identify and anticipate consumer demands. We also want to remain in tune with consumers after they have bought our products. To do this, we regularly develop effective promotional tools, high-impact and eye-catching advertising campaigns and innovative digital experiences connected to our brands.</p></font>
+  </div>
+  <div id="menu4" class="tab-pane fade"><font color="#FC243C">
+    <h1 align="center" class="smallheadig">Enviroment</h1><p align="center" class="stuffofsmalheadig">Respect for the environment, not only by complying with local laws and regulations but also through trying to minimise the impact of our operations, is a vital principle at Sweet Mart. Improving the efficiency of our production processes to reduce waste, making the best use of natural resources and looking for environmentally-friendly options in our packaging choices and distribution strategies are key to executing this ideal.</p></font>
+  </div>
+  <div id="menu5" class="tab-pane fade"><font color="#FC243C">
+    <h1 align="center" class="smallheadig">People</h1><p align="center" class="stuffofsmalheadig">Behind our success lies the initiative, enthusiasm, passion, dedication and creativity of our people. We are committed to creating a stimulating work environment, guaranteeing safe working conditions in our factories and offering Group-wide development and career opportunities.</p></font>
+  </div>
+</div>
+ </div>
+ </div>
+	  
+  <!-- facts part -->
+	   <div class="container-fluid" id="facts">
+	  <div class="container-fluid" id="headingfacts">
+			<center>Miscellaneous</center>
+		</div>
+		<div class="container-fluid" id="stuffacts">
+		  <div class="row">
+			  <div class="col-lg-4 f1">
+				  <center><h1 class="smallheadig s1"><font color="#FC243C">Advertisements</font></h1>
+				  <p class="stuffofsmalheadig vid2"><div class="embed-responsive embed-responsive-21by9" >
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JULxC_xkn_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+					  </p>
+				  </center>
+			  <center>
+				  <p class="vid2"><div class="embed-responsive embed-responsive-21by9">
+  <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/pL1kcBwWmsI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+					  </p>
+				  </center>
+			  </div>
+			  <div class="col-lg-4">
+				  <center><h1 class="smallheadig s1">Fun Facts</h1>
+				  <p class="stuffofsmalheadig">
+				  
+					  <div class="container">
+    <div id="carouselContent" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+			<div id="c1">
+            <div class="carousel-item active text-center p-4">
+                 <p>If you are chewing on gum while cutting onions, this will stop your eyes from watering. The science behind it? While chewing on gum you will breathe through your mouth rather than your nose so the irritation caused by the onion scent will reach the lachrymal gland in smaller amounts.</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+                <p>Another fun fact about chewing gum is that it has two national days on September 30th and on February 15th. Celebrate by blowing some bubbles!</p>
+            </div>
+			<div class="carousel-item text-center p-4">
+                <p>Have you ever wondered why most chewing gum is pink? Well, an interesting fun fact about chewing gum is that the inventor was desperately trying to create the perfect bubble gum, and by the time the recipe reached perfection, the only colour he had left to use was pink!
+<br>
+The history of chewing gum makes for a fascinating read.</p>
+            </div>
+			<div class="carousel-item text-center p-4">
+                <p>We all grew up being told that if you swallow chewing gum, your intestines will get clogged up and your intestines will get stuck together. Sound familiar? Well in actual fact, this is actually quite rare.
+<br>
+If you swallow chewing gum, it will be in your system for a few days, before your body will get rid of it.  As gum base can’t be digested, you will eliminate it as a whole. If you want to read more about what happens when you swallow chewing gum, read our blog post!</p>
+            </div>
+			<div class="carousel-item text-center p-4">
+                <p>An interesting of chewing gum fact is that it can help you concentrate. Studies have shown that when you chew on gum you become more alert, your muscle tension is reduced and you are able to focus better on the activities you are working on.</p>
+            </div>
+			<div class="carousel-item text-center p-4">
+                <p>If you’ve ever been on a plane, you will know how it feels for your ears to pop. But you don’t need to worry anymore! A useful fact is that chewing gum can prevent your ears from popping when you’re changing altitude levels on a plane. This is because you produce more saliva when you chew on gum and swallowing helps balance the pressure in your head. So grab some ChewsyGum before heading abroad!</p>
+            </div>
+			<div class="carousel-item text-center p-4">
+                <p>The only animals that can chew on gum are humans! Interestingly, despite studies suggesting we originate from the monkey family, when monkeys were given chewing gum for the first time, they chewed on it for a few minutes before taking it out and sticking it to their fur.</p>
+            </div>
+			<div class="carousel-item text-center p-4">
+                <p>Another useful fun fact about chewing gum is that you can remove it from your hair using peanut butter. You will have to separate the area from the rest of your hair, cover it in peanut butter and start rubbing it out. This is due to the oil found in peanut butter  which helps to separate the gum. Hopefully the monkeys knew this trick too!
+<br>
+There are other ways in which you can remove chewing gum from your hair, but let’s face it, this is the tastiest way to do it.</p>
+            </div>
+			<div class="carousel-item text-center p-4">
+                <p>Do you often get heartburn after eating? The best way to combat this is to chew on some gum! Studies have shown that having a chewing gum after a meal helps with heartburn as it can reduce acid in the esophagus.</p>
+            </div>
+			<div class="carousel-item text-center p-4">
+                <p>The first name for chewing gum was “Blibber-Blubber”. Can you imagine if that stuck? It’s a bit of a mouthful to say the least!</p>
+            </div>
+        </div></div>
+        <a class="carousel-control-prev arrow" href="#carouselContent" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next arrow" href="#carouselContent" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+					  
+			      </p></center>
+			  </div>
+			  <div class="col-lg-4">
+				  <center>
+				  <p class="stuffofsmalheadig"><img src="Pictures/SpringBananaDefaultProduct.png" class="img-fluid" alt="Placeholder image"></p>
+				  </center>
+			  </div>
+		  </div>
+        </div>
+ </div>
+	
+	
+   <!-- Director part -->
+  <div class="container-fluid" id="director">
+	  <div class="container-fluid" id="headingdirector">
+			<center>Director's Note</center>
+    </div>
+		   <div class="container-fluid photocontainer" id="photodirector">
+		     <div class="row">
+			     <div class="col-lg-6">
+					 <center><img src="Pictures/Niranjan Agarwal.jpg" class="img-fluid p1" alt="Placeholder image"><br>
+						 <p class="t1"><font color="#FC243C">Mr. Niranjan Agrawal</font></p>
+					 </center>
+				 </div>
+			     <div class="col-lg-6">
+				 	<center><img src="Pictures/Siddharth Agrawal.jpeg" class="img-fluid p1" alt="Placeholder image"><br>
+					<p class="t1"><font color="#FC243C"> Mr. Siddharth Agrawal</font></p>
+					 </center>
+				 </div>
+		     </div>
+	  </div>
+	  <div class="container-fluid" id="contentdirector">
+	  	<center><b>We, the directors here at Sweet Mart look forward to make this company’s products the most appealing and pleasant to the general customers. The products here are made with all the the precautions kept in mind and without any harm done to the enviroment.
+We hope that our customers help this company to excel.</b></center>
+	  </div>
+ </div>
+
+	  
+<!--contact part -->
+<div class="container-fluid" id="contact">
+	  <div class="container-fluid" id="headingcontact">
+			<center>Contact Us</center>
+    </div>
+		   <div class="container-fluid" id="photocontact">
+		     <div class="row">
+			     <div class="col-lg-6 add">
+					 <p class="address"><center><b><font size="+1" color="#FC243C">B/h. Thakur Ram Multiple Campus<br>
+		Relief Society Road,
+		Adarsh Nagar,<br>
+		Birgunj - 10, Parsa, Nepal.<br>
+		Ph:- +977-51-418438<br>
+		Email: info@sweetmartfood.com <br>
+						 sweetmartfoodindustries@gmail.com</font></b></center></p> 
+				 </div>
+			     <div class="col-lg-6">
+				 	<div class="embed-responsive embed-responsive-21by9 map" >
+  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.505818100528!2d84.86504871452613!3d27.014178183083935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3993543cb54a02a1%3A0xa289a0f04e817fa4!2sSweet+Mart+Food+Industries!5e0!3m2!1sen!2s!4v1487613678926" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				 </div>
+		     </div>
+	  </div>
+
+ </div>
+
+<!-- footer -->
+<div class="container-fluid" id="footer">
+		   <div class="container-fluid" id="footerco">
+		     <div class="row">
+			     <div class="col-lg-6 text1">
+					 <center><img src="Pictures/MainLogo.png" class="img-responsive logofoot" alt="Placeholder image"></center>
+    	<br>
+    	<p><font color="#FC243C" size="+1"><center>&copy; 2017. Sweet Mart Food Industries - All Rights Reserved</center></font></p> 
+				 </div>
+			     <div class="col-lg-6 picfoot"><center>
+				 	<a href="https://www.facebook.com/sweetmartfood"><img src="Pictures/facebook.png" width="50px" class="p2"></a>
+    	<a href="https://twitter.com/Sweetmartfood"><img src="Pictures/twitter.png" width="50px" class="p2"></a>
+    	<a href="https://www.instagram.com/sweetmartfoodindustries/"><img src="Pictures/instagram.png" width="50px" class="p2"></a>
+					 </center>
+    	</div>
+				 </div>
+		     </div>
+	  
+
+ </div>
+	  
+	  
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.3.1.js"></script>
+	<script src="js/particles.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
